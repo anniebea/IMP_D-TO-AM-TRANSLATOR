@@ -6,6 +6,11 @@ class CustomVisitor(IMP_py.IMP_DVisitor.IMP_DVisitor):
     def visitProgr(self, ctx: IMP_DParser.ProgrContext):
         return str(self.visitChildren(ctx))
 
+    def visitSeries(self, ctx: IMP_DParser.SeriesContext):
+        result = str(self.visitStmt(ctx.getChild(0)))
+        for i in range(2, ctx.getChildCount(), 2):
+            result = result + ";" + self.visitStmt(ctx.getChild(i))
+        return result
 
     def visitAssign_stmt(self, ctx: IMP_DParser.Assign_stmtContext):
         result = str(self.visitExpr(ctx.getChild(2))) + ":STORE(" + str(ctx.getChild(0)) + ")"
@@ -23,33 +28,22 @@ class CustomVisitor(IMP_py.IMP_DVisitor.IMP_DVisitor):
         return result
 
     def visitExpr(self, ctx: IMP_DParser.ExprContext):
-        if str(ctx.getChildCount()) == "1":
-            return str(self.visitTerm(ctx.getChild(0)))
-        else:
-            childVal0 = str(self.visitTerm(ctx.getChild(0)))
-            childVal2 = str(self.visitTerm(ctx.getChild(2)))
-
-            if str(ctx.getChild(1)) == "+":
-                result = "" + childVal2 + ":" + childVal0 + ":ADD"
-                return result
+        result = str(self.visitTerm(ctx.getChild(0)))
+        for i in range(2, ctx.getChildCount(), 2):
+            if str(ctx.getChild(i-1)) == "+":
+                result = str(self.visitTerm(ctx.getChild(i))) + ":" + result + ":ADD"
             else:
-                result = "" + childVal2 + ":" + childVal0 + ":SUB"
-                return result
+                result = str(self.visitTerm(ctx.getChild(i))) + ":" + result + ":SUB"
+        return result
 
     def visitTerm(self, ctx: IMP_DParser.TermContext):
-        if str(ctx.getChildCount()) == "1":
-            return str(self.visitElem(ctx.getChild(0)))
-        else:
-            if str(ctx.getChild(1)) == "*":
-                childVal0 = str(self.visitElem(ctx.getChild(0)))
-                childVal2 = str(self.visitElem(ctx.getChild(2)))
-                result = "" + childVal2 + ":" + childVal0 + ":MULT"
-                return result
+        result = str(self.visitElem(ctx.getChild(0)))
+        for i in range(2, ctx.getChildCount(), 2):
+            if str(ctx.getChild(i-1)) == "*":
+                result = str(self.visitElem(ctx.getChild(i))) + ":" + result + ":MULT"
             else:
-                childVal0 = str(self.visitElem(ctx.getChild(0)))
-                childVal2 = str(self.visitElem(ctx.getChild(2)))
-                result = "" + childVal2 + ":" + childVal0 + ":DIV"
-                return result
+                result = str(self.visitElem(ctx.getChild(i))) + ":" + result + ":DIV"
+        return result
 
     def visitElem(self, ctx: IMP_DParser.ElemContext):
         if str(ctx.getChildCount()) == "1":  # NUMBER | VARNAME
@@ -63,20 +57,16 @@ class CustomVisitor(IMP_py.IMP_DVisitor.IMP_DVisitor):
             return self.visitExpr(ctx.getChild(1))
 
     def visitLog_expr(self, ctx: IMP_DParser.Log_exprContext):
-        if str(ctx.getChildCount()) == "1":
-            return str(self.visitLog_term(ctx.getChild(0)))
-        else:
-            result = str(self.visitLog_term(ctx.getChild(2))) \
-                     + ":" + str(self.visitLog_term(ctx.getChild(0))) + ":OR"
-            return result
+        result = str(self.visitLog_term(ctx.getChild(0)))
+        for i in range(2, ctx.getChildCount(), 2):
+            result = str(self.visitLog_term(ctx.getChild(i))) + ":" + result + ":OR"
+        return result
 
     def visitLog_term(self, ctx: IMP_DParser.Log_exprContext):
-        if str(ctx.getChildCount()) == "1":
-            return str(self.visitLog_elem(ctx.getChild(0)))
-        else:
-            result = "" + str(self.visitLog_elem(ctx.getChild(2))) + "" \
-                    ":" + str(self.visitLog_elem(ctx.getChild(0))) + ":AND"
-            return result
+        result = str(self.visitLog_elem(ctx.getChild(0)))
+        for i in range(2, ctx.getChildCount(), 2):
+            result = str(self.visitLog_elem(ctx.getChild(i))) + ":" + result + ":AND"
+        return result
 
     def visitLog_elem(self, ctx: IMP_DParser.Log_elemContext):
         result = None

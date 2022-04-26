@@ -1,0 +1,6 @@
+if x=<y then y:=y-x
+else x:=x-y fi;
+if x=<y then y:=y-x
+else x:=x-y fi;
+if x=<y then y:=y-x
+else x:=x-y fi
