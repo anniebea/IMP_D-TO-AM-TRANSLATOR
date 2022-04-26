@@ -19,18 +19,31 @@ def main(argv):
     treeString = treeString.replace(" )", "")
 
     print("\n")
-    print("======IMP_D string tree, created using ANTLR4======")
+    print("============IMP_D string tree, created using ANTLR4============")
     print(treeString)
-    print("=================================================")
+    print("===============================================================")
 
     # Visitor rules
     visitor = customVisitor.CustomVisitor()
     result = visitor.visit(tree)
 
     print("\n")
-    print("==============TRANSLATED AM STRING===============")
+    print("====================TRANSLATED AM STRING=======================")
     print(result)
-    print("=================================================")
+    print("===============================================================")
 
 if __name__ == "__main__":
     main(sys.argv)
+
+"""
+LKD aprēķins IMP_D sintaksē:
+while not x=y do
+    if x=<y then y:=y-x
+    else x:=x-y fi
+od
+
+LKD aprēķins AM sintaksē:
+LOOP(FETCH(y):FETCH(x):EQ:NEG,FETCH(y):FETCH(x):LE:BRANCH(FETCH(x):FETCH(y):SUB:STORE(y),FETCH(y):FETCH(x):SUB:STORE(x)))
+
+LOOP(FETCH(x):FETCH(y):EQ:NEG,FETCH(x):FETCH(y):LE:BRANCH(FETCH(y):FETCH(x):SUB:STORE(y),FETCH(x):FETCH(y):SUB:STORE(x)))
+"""
