@@ -29,6 +29,21 @@ class IMP_DVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by IMP_DParser#input_stmt.
+    def visitInput_stmt(self, ctx:IMP_DParser.Input_stmtContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by IMP_DParser#output_stmt.
+    def visitOutput_stmt(self, ctx:IMP_DParser.Output_stmtContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by IMP_DParser#varlist.
+    def visitVarlist(self, ctx:IMP_DParser.VarlistContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by IMP_DParser#cond_stmt.
     def visitCond_stmt(self, ctx:IMP_DParser.Cond_stmtContext):
         return self.visitChildren(ctx)

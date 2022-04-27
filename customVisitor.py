@@ -9,8 +9,22 @@ class CustomVisitor(IMP_py.IMP_DVisitor.IMP_DVisitor):
     def visitSeries(self, ctx: IMP_DParser.SeriesContext):
         result = str(self.visitStmt(ctx.getChild(0)))
         for i in range(2, ctx.getChildCount(), 2):
-            result = result + ";" + self.visitStmt(ctx.getChild(i))
+            result = result + ";" + str(self.visitStmt(ctx.getChild(i)))
         return result
+
+    def visitStmt(self, ctx: IMP_DParser.StmtContext):
+        if ctx.cond_stmt() is not None:
+            return self.visitCond_stmt(ctx.getChild(0))
+        elif ctx.loop() is not None:
+            return self.visitLoop(ctx.getChild(0))
+        elif ctx.input_stmt() is not None:
+            return self.visitInput_stmt(ctx.getChild(0))
+        elif ctx.output_stmt() is not None:
+            return self.visitOutput_stmt(ctx.getChild(0))
+        elif ctx.assign_stmt() is not None:
+            return self.visitAssign_stmt(ctx.getChild(0))
+
+        return self.visitChildren(ctx)
 
     def visitAssign_stmt(self, ctx: IMP_DParser.Assign_stmtContext):
         result = str(self.visitExpr(ctx.getChild(2))) + ":STORE(" + str(ctx.getChild(0)) + ")"
@@ -111,3 +125,25 @@ class CustomVisitor(IMP_py.IMP_DVisitor.IMP_DVisitor):
             return "" + childVal2 + ":" + childVal0 + ":LE:NEG"
         else:
             return None
+
+    def visitInput_stmt(self, ctx: IMP_DParser.Input_stmtContext):
+        varlist = self.visitVarlist(ctx.getChild(1))
+        result = ""
+        for i in varlist:
+            result = result + ":READ(" + i + ")"
+        result = result[1:]
+        return result
+
+    def visitOutput_stmt(self, ctx: IMP_DParser.Output_stmtContext):
+        varlist = self.visitVarlist(ctx.getChild(1))
+        result = ""
+        for i in varlist:
+            result = result + ":WRITE(" + i + ")"
+        result = result[1:]
+        return result
+
+    def visitVarlist(self, ctx: IMP_DParser.VarlistContext):
+        result = [str(ctx.getChild(0))]
+        for i in range(2, ctx.getChildCount(), 2):
+            result.append(str(ctx.getChild(i)))
+        return result

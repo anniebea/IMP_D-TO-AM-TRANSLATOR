@@ -11,16 +11,16 @@ Pamata struktūras
 */
 
 series              :       stmt (SEMICOLON stmt)*;
-stmt                :       assign_stmt | cond_stmt | loop; // | input_stmt | output_stmt
+stmt                :       cond_stmt | loop | input_stmt | output_stmt | assign_stmt;
 assign_stmt         :       VARNAME ':=' expr;
 
 /*
 Read un Write struktūras
 */
 
-//input_stmt          :       'read' varlist;
-//output_stmt         :       'write' varlist;
-//varlist             :       VARNAME (',' VARNAME)*;
+input_stmt          :       'read' varlist;
+output_stmt         :       'write' varlist;
+varlist             :       VARNAME (',' VARNAME)*;
 
 /*
 If un While struktūras

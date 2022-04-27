@@ -10,42 +10,50 @@ else:
 
 def serializedATN():
     return [
-        4,1,21,116,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
-        6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,1,0,1,0,
-        1,1,1,1,1,1,5,1,32,8,1,10,1,12,1,35,9,1,1,2,1,2,1,2,3,2,40,8,2,1,
-        3,1,3,1,3,1,3,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,5,1,5,1,5,1,5,1,
-        5,1,5,1,6,1,6,1,6,5,6,63,8,6,10,6,12,6,66,9,6,1,7,1,7,1,7,5,7,71,
-        8,7,10,7,12,7,74,9,7,1,8,3,8,77,8,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,
-        3,8,86,8,8,1,9,1,9,1,9,1,9,1,10,1,10,1,10,5,10,95,8,10,10,10,12,
-        10,98,9,10,1,11,1,11,1,11,5,11,103,8,11,10,11,12,11,106,9,11,1,12,
-        1,12,1,12,1,12,1,12,1,12,3,12,114,8,12,1,12,0,0,13,0,2,4,6,8,10,
-        12,14,16,18,20,22,24,0,0,115,0,26,1,0,0,0,2,28,1,0,0,0,4,39,1,0,
-        0,0,6,41,1,0,0,0,8,45,1,0,0,0,10,53,1,0,0,0,12,59,1,0,0,0,14,67,
-        1,0,0,0,16,76,1,0,0,0,18,87,1,0,0,0,20,91,1,0,0,0,22,99,1,0,0,0,
-        24,113,1,0,0,0,26,27,3,2,1,0,27,1,1,0,0,0,28,33,3,4,2,0,29,30,5,
-        16,0,0,30,32,3,4,2,0,31,29,1,0,0,0,32,35,1,0,0,0,33,31,1,0,0,0,33,
-        34,1,0,0,0,34,3,1,0,0,0,35,33,1,0,0,0,36,40,3,6,3,0,37,40,3,8,4,
-        0,38,40,3,10,5,0,39,36,1,0,0,0,39,37,1,0,0,0,39,38,1,0,0,0,40,5,
-        1,0,0,0,41,42,5,20,0,0,42,43,5,1,0,0,43,44,3,20,10,0,44,7,1,0,0,
-        0,45,46,5,2,0,0,46,47,3,12,6,0,47,48,5,3,0,0,48,49,3,2,1,0,49,50,
-        5,4,0,0,50,51,3,2,1,0,51,52,5,5,0,0,52,9,1,0,0,0,53,54,5,6,0,0,54,
-        55,3,12,6,0,55,56,5,7,0,0,56,57,3,2,1,0,57,58,5,8,0,0,58,11,1,0,
-        0,0,59,64,3,14,7,0,60,61,5,14,0,0,61,63,3,14,7,0,62,60,1,0,0,0,63,
+        4,1,24,138,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
+        2,14,7,14,2,15,7,15,1,0,1,0,1,1,1,1,1,1,5,1,38,8,1,10,1,12,1,41,
+        9,1,1,2,1,2,1,2,1,2,1,2,3,2,48,8,2,1,3,1,3,1,3,1,3,1,4,1,4,1,4,1,
+        5,1,5,1,5,1,6,1,6,1,6,5,6,63,8,6,10,6,12,6,66,9,6,1,7,1,7,1,7,1,
+        7,1,7,1,7,1,7,1,7,1,8,1,8,1,8,1,8,1,8,1,8,1,9,1,9,1,9,5,9,85,8,9,
+        10,9,12,9,88,9,9,1,10,1,10,1,10,5,10,93,8,10,10,10,12,10,96,9,10,
+        1,11,3,11,99,8,11,1,11,1,11,1,11,1,11,1,11,1,11,1,11,3,11,108,8,
+        11,1,12,1,12,1,12,1,12,1,13,1,13,1,13,5,13,117,8,13,10,13,12,13,
+        120,9,13,1,14,1,14,1,14,5,14,125,8,14,10,14,12,14,128,9,14,1,15,
+        1,15,1,15,1,15,1,15,1,15,3,15,136,8,15,1,15,0,0,16,0,2,4,6,8,10,
+        12,14,16,18,20,22,24,26,28,30,0,0,137,0,32,1,0,0,0,2,34,1,0,0,0,
+        4,47,1,0,0,0,6,49,1,0,0,0,8,53,1,0,0,0,10,56,1,0,0,0,12,59,1,0,0,
+        0,14,67,1,0,0,0,16,75,1,0,0,0,18,81,1,0,0,0,20,89,1,0,0,0,22,98,
+        1,0,0,0,24,109,1,0,0,0,26,113,1,0,0,0,28,121,1,0,0,0,30,135,1,0,
+        0,0,32,33,3,2,1,0,33,1,1,0,0,0,34,39,3,4,2,0,35,36,5,19,0,0,36,38,
+        3,4,2,0,37,35,1,0,0,0,38,41,1,0,0,0,39,37,1,0,0,0,39,40,1,0,0,0,
+        40,3,1,0,0,0,41,39,1,0,0,0,42,48,3,6,3,0,43,48,3,14,7,0,44,48,3,
+        16,8,0,45,48,3,8,4,0,46,48,3,10,5,0,47,42,1,0,0,0,47,43,1,0,0,0,
+        47,44,1,0,0,0,47,45,1,0,0,0,47,46,1,0,0,0,48,5,1,0,0,0,49,50,5,23,
+        0,0,50,51,5,1,0,0,51,52,3,26,13,0,52,7,1,0,0,0,53,54,5,2,0,0,54,
+        55,3,12,6,0,55,9,1,0,0,0,56,57,5,3,0,0,57,58,3,12,6,0,58,11,1,0,
+        0,0,59,64,5,23,0,0,60,61,5,4,0,0,61,63,5,23,0,0,62,60,1,0,0,0,63,
         66,1,0,0,0,64,62,1,0,0,0,64,65,1,0,0,0,65,13,1,0,0,0,66,64,1,0,0,
-        0,67,72,3,16,8,0,68,69,5,13,0,0,69,71,3,16,8,0,70,68,1,0,0,0,71,
-        74,1,0,0,0,72,70,1,0,0,0,72,73,1,0,0,0,73,15,1,0,0,0,74,72,1,0,0,
-        0,75,77,5,15,0,0,76,75,1,0,0,0,76,77,1,0,0,0,77,85,1,0,0,0,78,86,
-        3,18,9,0,79,86,5,12,0,0,80,81,5,17,0,0,81,82,3,12,6,0,82,83,5,18,
-        0,0,83,86,1,0,0,0,84,86,5,20,0,0,85,78,1,0,0,0,85,79,1,0,0,0,85,
-        80,1,0,0,0,85,84,1,0,0,0,86,17,1,0,0,0,87,88,3,20,10,0,88,89,5,11,
-        0,0,89,90,3,20,10,0,90,19,1,0,0,0,91,96,3,22,11,0,92,93,5,9,0,0,
-        93,95,3,22,11,0,94,92,1,0,0,0,95,98,1,0,0,0,96,94,1,0,0,0,96,97,
-        1,0,0,0,97,21,1,0,0,0,98,96,1,0,0,0,99,104,3,24,12,0,100,101,5,10,
-        0,0,101,103,3,24,12,0,102,100,1,0,0,0,103,106,1,0,0,0,104,102,1,
-        0,0,0,104,105,1,0,0,0,105,23,1,0,0,0,106,104,1,0,0,0,107,114,5,19,
-        0,0,108,114,5,20,0,0,109,110,5,17,0,0,110,111,3,20,10,0,111,112,
-        5,18,0,0,112,114,1,0,0,0,113,107,1,0,0,0,113,108,1,0,0,0,113,109,
-        1,0,0,0,114,25,1,0,0,0,9,33,39,64,72,76,85,96,104,113
+        0,67,68,5,5,0,0,68,69,3,18,9,0,69,70,5,6,0,0,70,71,3,2,1,0,71,72,
+        5,7,0,0,72,73,3,2,1,0,73,74,5,8,0,0,74,15,1,0,0,0,75,76,5,9,0,0,
+        76,77,3,18,9,0,77,78,5,10,0,0,78,79,3,2,1,0,79,80,5,11,0,0,80,17,
+        1,0,0,0,81,86,3,20,10,0,82,83,5,17,0,0,83,85,3,20,10,0,84,82,1,0,
+        0,0,85,88,1,0,0,0,86,84,1,0,0,0,86,87,1,0,0,0,87,19,1,0,0,0,88,86,
+        1,0,0,0,89,94,3,22,11,0,90,91,5,16,0,0,91,93,3,22,11,0,92,90,1,0,
+        0,0,93,96,1,0,0,0,94,92,1,0,0,0,94,95,1,0,0,0,95,21,1,0,0,0,96,94,
+        1,0,0,0,97,99,5,18,0,0,98,97,1,0,0,0,98,99,1,0,0,0,99,107,1,0,0,
+        0,100,108,3,24,12,0,101,108,5,15,0,0,102,103,5,20,0,0,103,104,3,
+        18,9,0,104,105,5,21,0,0,105,108,1,0,0,0,106,108,5,23,0,0,107,100,
+        1,0,0,0,107,101,1,0,0,0,107,102,1,0,0,0,107,106,1,0,0,0,108,23,1,
+        0,0,0,109,110,3,26,13,0,110,111,5,14,0,0,111,112,3,26,13,0,112,25,
+        1,0,0,0,113,118,3,28,14,0,114,115,5,12,0,0,115,117,3,28,14,0,116,
+        114,1,0,0,0,117,120,1,0,0,0,118,116,1,0,0,0,118,119,1,0,0,0,119,
+        27,1,0,0,0,120,118,1,0,0,0,121,126,3,30,15,0,122,123,5,13,0,0,123,
+        125,3,30,15,0,124,122,1,0,0,0,125,128,1,0,0,0,126,124,1,0,0,0,126,
+        127,1,0,0,0,127,29,1,0,0,0,128,126,1,0,0,0,129,136,5,22,0,0,130,
+        136,5,23,0,0,131,132,5,20,0,0,132,133,3,26,13,0,133,134,5,21,0,0,
+        134,136,1,0,0,0,135,129,1,0,0,0,135,130,1,0,0,0,135,131,1,0,0,0,
+        136,31,1,0,0,0,10,39,47,64,86,94,98,107,118,126,135
     ]
 
 class IMP_DParser ( Parser ):
@@ -58,35 +66,39 @@ class IMP_DParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "':='", "'if'", "'then'", "'else'", "'fi'", 
-                     "'while'", "'do'", "'od'", "<INVALID>", "<INVALID>", 
-                     "<INVALID>", "<INVALID>", "'and'", "'or'", "'not'", 
-                     "';'", "'('", "')'" ]
+    literalNames = [ "<INVALID>", "':='", "'read'", "'write'", "','", "'if'", 
+                     "'then'", "'else'", "'fi'", "'while'", "'do'", "'od'", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "'and'", "'or'", "'not'", "';'", "'('", "')'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "WEAKOP", "STRONGOP", "RELATION", "BOOL", 
-                      "CONJUNCTION", "DISCJUNCTION", "NOT", "SEMICOLON", 
-                      "LPARENTHESIS", "RPARENTHESIS", "NUMBER", "VARNAME", 
-                      "WS" ]
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "WEAKOP", "STRONGOP", "RELATION", "BOOL", "CONJUNCTION", 
+                      "DISCJUNCTION", "NOT", "SEMICOLON", "LPARENTHESIS", 
+                      "RPARENTHESIS", "NUMBER", "VARNAME", "WS" ]
 
     RULE_progr = 0
     RULE_series = 1
     RULE_stmt = 2
     RULE_assign_stmt = 3
-    RULE_cond_stmt = 4
-    RULE_loop = 5
-    RULE_log_expr = 6
-    RULE_log_term = 7
-    RULE_log_elem = 8
-    RULE_condition = 9
-    RULE_expr = 10
-    RULE_term = 11
-    RULE_elem = 12
+    RULE_input_stmt = 4
+    RULE_output_stmt = 5
+    RULE_varlist = 6
+    RULE_cond_stmt = 7
+    RULE_loop = 8
+    RULE_log_expr = 9
+    RULE_log_term = 10
+    RULE_log_elem = 11
+    RULE_condition = 12
+    RULE_expr = 13
+    RULE_term = 14
+    RULE_elem = 15
 
-    ruleNames =  [ "progr", "series", "stmt", "assign_stmt", "cond_stmt", 
-                   "loop", "log_expr", "log_term", "log_elem", "condition", 
-                   "expr", "term", "elem" ]
+    ruleNames =  [ "progr", "series", "stmt", "assign_stmt", "input_stmt", 
+                   "output_stmt", "varlist", "cond_stmt", "loop", "log_expr", 
+                   "log_term", "log_elem", "condition", "expr", "term", 
+                   "elem" ]
 
     EOF = Token.EOF
     T__0=1
@@ -97,19 +109,22 @@ class IMP_DParser ( Parser ):
     T__5=6
     T__6=7
     T__7=8
-    WEAKOP=9
-    STRONGOP=10
-    RELATION=11
-    BOOL=12
-    CONJUNCTION=13
-    DISCJUNCTION=14
-    NOT=15
-    SEMICOLON=16
-    LPARENTHESIS=17
-    RPARENTHESIS=18
-    NUMBER=19
-    VARNAME=20
-    WS=21
+    T__8=9
+    T__9=10
+    T__10=11
+    WEAKOP=12
+    STRONGOP=13
+    RELATION=14
+    BOOL=15
+    CONJUNCTION=16
+    DISCJUNCTION=17
+    NOT=18
+    SEMICOLON=19
+    LPARENTHESIS=20
+    RPARENTHESIS=21
+    NUMBER=22
+    VARNAME=23
+    WS=24
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -157,7 +172,7 @@ class IMP_DParser ( Parser ):
         self.enterRule(localctx, 0, self.RULE_progr)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 26
+            self.state = 32
             self.series()
         except RecognitionException as re:
             localctx.exception = re
@@ -215,17 +230,17 @@ class IMP_DParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 28
+            self.state = 34
             self.stmt()
-            self.state = 33
+            self.state = 39
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==IMP_DParser.SEMICOLON:
-                self.state = 29
-                self.match(IMP_DParser.SEMICOLON)
-                self.state = 30
-                self.stmt()
                 self.state = 35
+                self.match(IMP_DParser.SEMICOLON)
+                self.state = 36
+                self.stmt()
+                self.state = 41
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -257,6 +272,14 @@ class IMP_DParser ( Parser ):
             return self.getTypedRuleContext(IMP_DParser.LoopContext,0)
 
 
+        def input_stmt(self):
+            return self.getTypedRuleContext(IMP_DParser.Input_stmtContext,0)
+
+
+        def output_stmt(self):
+            return self.getTypedRuleContext(IMP_DParser.Output_stmtContext,0)
+
+
         def getRuleIndex(self):
             return IMP_DParser.RULE_stmt
 
@@ -282,23 +305,33 @@ class IMP_DParser ( Parser ):
         localctx = IMP_DParser.StmtContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_stmt)
         try:
-            self.state = 39
+            self.state = 47
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [IMP_DParser.VARNAME]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 36
+                self.state = 42
                 self.assign_stmt()
                 pass
-            elif token in [IMP_DParser.T__1]:
+            elif token in [IMP_DParser.T__4]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 37
+                self.state = 43
                 self.cond_stmt()
                 pass
-            elif token in [IMP_DParser.T__5]:
+            elif token in [IMP_DParser.T__8]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 38
+                self.state = 44
                 self.loop()
+                pass
+            elif token in [IMP_DParser.T__1]:
+                self.enterOuterAlt(localctx, 4)
+                self.state = 45
+                self.input_stmt()
+                pass
+            elif token in [IMP_DParser.T__2]:
+                self.enterOuterAlt(localctx, 5)
+                self.state = 46
+                self.output_stmt()
                 pass
             else:
                 raise NoViableAltException(self)
@@ -352,12 +385,175 @@ class IMP_DParser ( Parser ):
         self.enterRule(localctx, 6, self.RULE_assign_stmt)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 41
+            self.state = 49
             self.match(IMP_DParser.VARNAME)
-            self.state = 42
+            self.state = 50
             self.match(IMP_DParser.T__0)
-            self.state = 43
+            self.state = 51
             self.expr()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Input_stmtContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def varlist(self):
+            return self.getTypedRuleContext(IMP_DParser.VarlistContext,0)
+
+
+        def getRuleIndex(self):
+            return IMP_DParser.RULE_input_stmt
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInput_stmt" ):
+                listener.enterInput_stmt(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInput_stmt" ):
+                listener.exitInput_stmt(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitInput_stmt" ):
+                return visitor.visitInput_stmt(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def input_stmt(self):
+
+        localctx = IMP_DParser.Input_stmtContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 8, self.RULE_input_stmt)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 53
+            self.match(IMP_DParser.T__1)
+            self.state = 54
+            self.varlist()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Output_stmtContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def varlist(self):
+            return self.getTypedRuleContext(IMP_DParser.VarlistContext,0)
+
+
+        def getRuleIndex(self):
+            return IMP_DParser.RULE_output_stmt
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterOutput_stmt" ):
+                listener.enterOutput_stmt(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitOutput_stmt" ):
+                listener.exitOutput_stmt(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitOutput_stmt" ):
+                return visitor.visitOutput_stmt(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def output_stmt(self):
+
+        localctx = IMP_DParser.Output_stmtContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 10, self.RULE_output_stmt)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 56
+            self.match(IMP_DParser.T__2)
+            self.state = 57
+            self.varlist()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class VarlistContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def VARNAME(self, i:int=None):
+            if i is None:
+                return self.getTokens(IMP_DParser.VARNAME)
+            else:
+                return self.getToken(IMP_DParser.VARNAME, i)
+
+        def getRuleIndex(self):
+            return IMP_DParser.RULE_varlist
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterVarlist" ):
+                listener.enterVarlist(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitVarlist" ):
+                listener.exitVarlist(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVarlist" ):
+                return visitor.visitVarlist(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def varlist(self):
+
+        localctx = IMP_DParser.VarlistContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 12, self.RULE_varlist)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 59
+            self.match(IMP_DParser.VARNAME)
+            self.state = 64
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while _la==IMP_DParser.T__3:
+                self.state = 60
+                self.match(IMP_DParser.T__3)
+                self.state = 61
+                self.match(IMP_DParser.VARNAME)
+                self.state = 66
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -408,23 +604,23 @@ class IMP_DParser ( Parser ):
     def cond_stmt(self):
 
         localctx = IMP_DParser.Cond_stmtContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 8, self.RULE_cond_stmt)
+        self.enterRule(localctx, 14, self.RULE_cond_stmt)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 45
-            self.match(IMP_DParser.T__1)
-            self.state = 46
-            self.log_expr()
-            self.state = 47
-            self.match(IMP_DParser.T__2)
-            self.state = 48
-            self.series()
-            self.state = 49
-            self.match(IMP_DParser.T__3)
-            self.state = 50
-            self.series()
-            self.state = 51
+            self.state = 67
             self.match(IMP_DParser.T__4)
+            self.state = 68
+            self.log_expr()
+            self.state = 69
+            self.match(IMP_DParser.T__5)
+            self.state = 70
+            self.series()
+            self.state = 71
+            self.match(IMP_DParser.T__6)
+            self.state = 72
+            self.series()
+            self.state = 73
+            self.match(IMP_DParser.T__7)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -472,19 +668,19 @@ class IMP_DParser ( Parser ):
     def loop(self):
 
         localctx = IMP_DParser.LoopContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 10, self.RULE_loop)
+        self.enterRule(localctx, 16, self.RULE_loop)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 53
-            self.match(IMP_DParser.T__5)
-            self.state = 54
+            self.state = 75
+            self.match(IMP_DParser.T__8)
+            self.state = 76
             self.log_expr()
-            self.state = 55
-            self.match(IMP_DParser.T__6)
-            self.state = 56
+            self.state = 77
+            self.match(IMP_DParser.T__9)
+            self.state = 78
             self.series()
-            self.state = 57
-            self.match(IMP_DParser.T__7)
+            self.state = 79
+            self.match(IMP_DParser.T__10)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -537,21 +733,21 @@ class IMP_DParser ( Parser ):
     def log_expr(self):
 
         localctx = IMP_DParser.Log_exprContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 12, self.RULE_log_expr)
+        self.enterRule(localctx, 18, self.RULE_log_expr)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 59
+            self.state = 81
             self.log_term()
-            self.state = 64
+            self.state = 86
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==IMP_DParser.DISCJUNCTION:
-                self.state = 60
+                self.state = 82
                 self.match(IMP_DParser.DISCJUNCTION)
-                self.state = 61
+                self.state = 83
                 self.log_term()
-                self.state = 66
+                self.state = 88
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -607,21 +803,21 @@ class IMP_DParser ( Parser ):
     def log_term(self):
 
         localctx = IMP_DParser.Log_termContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 14, self.RULE_log_term)
+        self.enterRule(localctx, 20, self.RULE_log_term)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 67
+            self.state = 89
             self.log_elem()
-            self.state = 72
+            self.state = 94
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==IMP_DParser.CONJUNCTION:
-                self.state = 68
+                self.state = 90
                 self.match(IMP_DParser.CONJUNCTION)
-                self.state = 69
+                self.state = 91
                 self.log_elem()
-                self.state = 74
+                self.state = 96
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -687,42 +883,42 @@ class IMP_DParser ( Parser ):
     def log_elem(self):
 
         localctx = IMP_DParser.Log_elemContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 16, self.RULE_log_elem)
+        self.enterRule(localctx, 22, self.RULE_log_elem)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 76
+            self.state = 98
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==IMP_DParser.NOT:
-                self.state = 75
+                self.state = 97
                 self.match(IMP_DParser.NOT)
 
 
-            self.state = 85
+            self.state = 107
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
             if la_ == 1:
-                self.state = 78
+                self.state = 100
                 self.condition()
                 pass
 
             elif la_ == 2:
-                self.state = 79
+                self.state = 101
                 self.match(IMP_DParser.BOOL)
                 pass
 
             elif la_ == 3:
-                self.state = 80
+                self.state = 102
                 self.match(IMP_DParser.LPARENTHESIS)
-                self.state = 81
+                self.state = 103
                 self.log_expr()
-                self.state = 82
+                self.state = 104
                 self.match(IMP_DParser.RPARENTHESIS)
                 pass
 
             elif la_ == 4:
-                self.state = 84
+                self.state = 106
                 self.match(IMP_DParser.VARNAME)
                 pass
 
@@ -776,14 +972,14 @@ class IMP_DParser ( Parser ):
     def condition(self):
 
         localctx = IMP_DParser.ConditionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_condition)
+        self.enterRule(localctx, 24, self.RULE_condition)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 87
+            self.state = 109
             self.expr()
-            self.state = 88
+            self.state = 110
             self.match(IMP_DParser.RELATION)
-            self.state = 89
+            self.state = 111
             self.expr()
         except RecognitionException as re:
             localctx.exception = re
@@ -837,21 +1033,21 @@ class IMP_DParser ( Parser ):
     def expr(self):
 
         localctx = IMP_DParser.ExprContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_expr)
+        self.enterRule(localctx, 26, self.RULE_expr)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 91
+            self.state = 113
             self.term()
-            self.state = 96
+            self.state = 118
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==IMP_DParser.WEAKOP:
-                self.state = 92
+                self.state = 114
                 self.match(IMP_DParser.WEAKOP)
-                self.state = 93
+                self.state = 115
                 self.term()
-                self.state = 98
+                self.state = 120
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -907,21 +1103,21 @@ class IMP_DParser ( Parser ):
     def term(self):
 
         localctx = IMP_DParser.TermContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_term)
+        self.enterRule(localctx, 28, self.RULE_term)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 99
+            self.state = 121
             self.elem()
-            self.state = 104
+            self.state = 126
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==IMP_DParser.STRONGOP:
-                self.state = 100
+                self.state = 122
                 self.match(IMP_DParser.STRONGOP)
-                self.state = 101
+                self.state = 123
                 self.elem()
-                self.state = 106
+                self.state = 128
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -980,28 +1176,28 @@ class IMP_DParser ( Parser ):
     def elem(self):
 
         localctx = IMP_DParser.ElemContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_elem)
+        self.enterRule(localctx, 30, self.RULE_elem)
         try:
-            self.state = 113
+            self.state = 135
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [IMP_DParser.NUMBER]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 107
+                self.state = 129
                 self.match(IMP_DParser.NUMBER)
                 pass
             elif token in [IMP_DParser.VARNAME]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 108
+                self.state = 130
                 self.match(IMP_DParser.VARNAME)
                 pass
             elif token in [IMP_DParser.LPARENTHESIS]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 109
+                self.state = 131
                 self.match(IMP_DParser.LPARENTHESIS)
-                self.state = 110
+                self.state = 132
                 self.expr()
-                self.state = 111
+                self.state = 133
                 self.match(IMP_DParser.RPARENTHESIS)
                 pass
             else:

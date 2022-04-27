@@ -44,6 +44,33 @@ class IMP_DListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by IMP_DParser#input_stmt.
+    def enterInput_stmt(self, ctx:IMP_DParser.Input_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IMP_DParser#input_stmt.
+    def exitInput_stmt(self, ctx:IMP_DParser.Input_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IMP_DParser#output_stmt.
+    def enterOutput_stmt(self, ctx:IMP_DParser.Output_stmtContext):
+        pass
+
+    # Exit a parse tree produced by IMP_DParser#output_stmt.
+    def exitOutput_stmt(self, ctx:IMP_DParser.Output_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by IMP_DParser#varlist.
+    def enterVarlist(self, ctx:IMP_DParser.VarlistContext):
+        pass
+
+    # Exit a parse tree produced by IMP_DParser#varlist.
+    def exitVarlist(self, ctx:IMP_DParser.VarlistContext):
+        pass
+
+
     # Enter a parse tree produced by IMP_DParser#cond_stmt.
     def enterCond_stmt(self, ctx:IMP_DParser.Cond_stmtContext):
         pass
